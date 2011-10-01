@@ -1,0 +1,33 @@
+{
+    attributes = (
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {
+            allowsNull = N; 
+            columnName = relatedEntityID; 
+            name = relatedEntityID; 
+            prototypeName = id; 
+        }, 
+        {
+            columnName = textAttribute; 
+            name = textAttribute; 
+            prototypeName = varchar255; 
+        }
+    ); 
+    attributesUsedForLocking = (id, relatedEntityID, textAttribute); 
+    className = "org.wocommunity.componenttour.model.BasicEntity"; 
+    classProperties = (relatedEntity, textAttribute); 
+    externalName = BasicEntity; 
+    fetchSpecificationDictionary = {}; 
+    name = BasicEntity; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = RelatedEntity; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = relatedEntityID; }); 
+            name = relatedEntity; 
+        }
+    ); 
+}

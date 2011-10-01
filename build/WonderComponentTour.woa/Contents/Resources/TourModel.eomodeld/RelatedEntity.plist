@@ -1,0 +1,26 @@
+{
+    attributes = (
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {
+            columnName = numberAttribute; 
+            name = numberAttribute; 
+            prototypeName = intNumber; 
+        }
+    ); 
+    attributesUsedForLocking = (id, numberAttribute); 
+    className = "org.wocommunity.componenttour.model.RelatedEntity"; 
+    classProperties = (basicEntities, numberAttribute); 
+    externalName = RelatedEntity; 
+    fetchSpecificationDictionary = {}; 
+    name = RelatedEntity; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = BasicEntity; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = relatedEntityID; sourceAttribute = id; }); 
+            name = basicEntities; 
+        }
+    ); 
+}
