@@ -11,7 +11,8 @@
     <p>With Safari, click on Control-Alt-b to click on the button</p>
     <p>With Firefox, click on Control-b</p>
     <wo:WOForm> <wo:ERXAccessibleSubmitButton value="Accessible Button" accesskey="b" onclick="alert('button is clicked');" /></wo:WOForm>
-    <h1>ERXAnyField (needs some bindings example in the JavaDoc...)</h1>
+    <h1>ERXAnyField</h1> 
+    <wo:ERXAnyField value="$value" selectedKey="$selectedKey" displayGroup="$dg" key="$key" sourceEntityName="$sourceEntityName" keyList="$keyList" /> (needs some bindings example in the JavaDoc...)
     <h1>ERXBooleanSelector</h1>
     <wo:ERXBooleanSelector selection="$booleanSelection" noSelectionString="None" />
     <h1>ERXCachingWrapper</h1>
@@ -21,17 +22,22 @@
     <h1>ERXCollapsibleComponentContent</h1>
     <h1>ERXColoredTabPanel</h1>
     <h1>ERXDataHyperlink</h1>
-    <h1>ERXDateGrouper</h1>
     <h1>ERXDebugMarker</h1>
+    <wo:ERXDebugMarker object="$editingContext"  />
     <h1>ERXDirectActionHyperlink</h1>
+    <wo:ERXDirectActionHyperlink directActionName="default" />
     <h1>ERXDirectActionImage</h1>
+    <wo:ERXDirectActionImage directActionName="default" />
     <h1>ERXDownloadResponse</h1>
     <h1>ERXDynamicURL</h1>
     <h1>ERXEditingContextInspector</h1>
+    <wo:ERXEditingContextInspector object="$editingContext" />
     <h1>ERXEditURL</h1>
+    <wo:ERXEditURL value="http://www.macti.ca" />
     <h1>ERXEmbeddedPage</h1>
     <h1>ERXEmptyComponent</h1>
     <h1>ERXErrorDictionaryPanel</h1>
+    <wo:ERXErrorDictionaryPanel errorMessages="$errors" extraErrorMessage="Extra error" shouldShowNewLineAbove=false />
     <h1>ERXExternalContent</h1>
     <h1>ERXFakeRelationship</h1>
     <h1>ERXFavIcon</h1>
@@ -40,20 +46,26 @@
     <h1>ERXGracefulShutdown</h1>
     <h1>ERXGroupingRepetition</h1>
     <h1>ERXGroupingTable</h1>
+    <wo:ERXGroupingTable list="$dg.displayedObjects" item="$entityItem" />
     <h1>ERXHyperlinkKeyValueSetter</h1>
+    <wo:ERXHyperlinkKeyValueSetter binding="$value" value="sexy">Link</wo:ERXHyperlinkKeyValueSetter>
     <h1>ERXIEConditionalComment</h1>
     <h1>ERXIFrame</h1>
     <h1>ERXImage</h1>
     <h1>ERXImageTabPanel</h1>
     <h1>ERXLanguageMenu</h1>
     <h1>ERXLayoutTable</h1>
+    <wo:ERXLayoutTable cellColSpan=2 list="$dg.displayedObjects" item="$entityItem"><wo:str value="$entityItem.textAttribute" /></wo:ERXLayoutTable>
     <h1>ERXLinkButton</h1>
     <h1>ERXLinkButton5</h1>
     <h1>ERXLinkRandomizer</h1>
+    <wo:ERXLinkRandomizer />
     <h1>ERXListDisplay</h1>
+    <h1>ERXLocalizationEditor</h1>
     <h1>ERXLoremIpsum</h1>
     <h1>ERXMailTo</h1>
     <h1>ERXMandatoryFieldMarker</h1>
+    <wo:ERXMandatoryFieldMarker condition=false />
     <h1>ERXModernizr</h1>
     <h1>ERXMonthView</h1>
     <h1>ERXNestedList</h1>
@@ -67,13 +79,13 @@
     <wo:ERXRepeatingTable list="$dg.displayedObjects" item="$entityItem" repetetions=1 maxColumns="3"><wo:str value="$entityItem.textAttribute" /></wo:ERXRepeatingTable>
     <h1>ERXResponseComponent</h1>
     <h1>ERXSimpleSpamCheck</h1>
+    <wo:ERXSimpleSpamCheck />
     <h1>ERXSingleButton</h1>
     <h1>ERXSLTWrapper</h1>
     <h1>ERXSortOrder</h1>
     <h1>ERXStatelessInlineTemplate</h1>
     <h1>ERXInlineTemplate</h1>
     <h1>ERXStringHolder</h1>
-    Use it to return a response in a direct action (see ERXDirectAction for examples)
     <h1>ERXStringListPicker</h1>
     <wo:ERXStringListPicker choices="$bunchOfStrings" />
     <h1>ERXStringWithLineBreaks</h1>
@@ -82,13 +94,13 @@
     <wo:ERXStyledContainer elementId="div" style.background-color="red" style.unit="10">This is from a div</wo:ERXStyledContainer>
     <h1>ERXStyleSheet</h1>
     <h1>ERXSuccess</h1>
+    <wo:ERXSuccess />
     <h1>ERXSwitchEmbeddedPage</h1>
     <wo:ERXSwitchEmbeddedPage initialComponentName="SubComponent" />
     <h1>ERXTable</h1>
     <wo:ERXTabPanel tabs="$dg.displayedObjects" />
     <h1>ERXTabPanel</h1>
     <h1>ERXTimeZoneDetector</h1>
-    <wo:ERXTimeZoneDetector preferredTimeZones="$preferredTimeZones" />
     <h1>ERXToManyRelationship</h1>
     <wo:ERXToManyRelationship relationshipKey="basicEntities" sourceEntityName="RelatedEntity" sourceObject="$relatedObjects" />
     <h1>ERXToOneRelationship</h1>

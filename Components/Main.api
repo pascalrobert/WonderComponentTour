@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <wodefinitions>
-        <wo wocomponentcontent="false" class="Main.java">
-        </wo>
+        <wo class="Main.java" wocomponentcontent="false">
+        <binding name="bidon"/>
+        <validation message="'/Users/probert/Tools/Src/Wonder54-Github/wonder/Frameworks/Core/ERExtensions/Components/ERXDirectActionHyperlink.api&#10;' is a required binding.">
+            <unbound name="bidon"/>
+        </validation>
+    </wo>
 </wodefinitions>
